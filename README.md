@@ -8,9 +8,13 @@ Assign each text record to identified clusters ranging from 1 to K.
 
 #### Approach:
 1)Read records from file in sparse format and store it into CSR matrix.
+
 2)Normalise CSR matrix by Inverse Document Frequency to minimise impact of frequent words.
+
 3)Perform Dimensionality Reduction algorithm SVD to inhibit influence of document length.
+
 4)Using DBSCAN cluster the text document.
+
 5)Evaluate cluster formation using calinski harabaz metrics.
 
 #### DBSCAN Implementation:
